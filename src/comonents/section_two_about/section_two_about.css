@@ -1,0 +1,23 @@
+.wrapper_about {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.title_section_about {
+    font-size: 44px;
+    text-align: start;
+    border-bottom: 2px solid #009f26;
+    padding: 50px 0;
+}
+
+.advantages_about {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_header {
+    color: #009f26;
+}
