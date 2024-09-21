@@ -1,10 +1,5 @@
-.h100_section_one {
-    height: calc(100vh - 66px);
-    background: #000218;
-}
-
 .h_section_two {
-    height: max-content;
+    height: auto;
 }
 
 .block_hello_main {

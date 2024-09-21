@@ -5,6 +5,7 @@
 
 .block_two_main {
     height: max-content;
+    padding: 40px 0 216px 0;
 }
 
 .twelth_block_uslugs {
@@ -62,4 +63,24 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.title_block__two {
+    font-size: 34px;
+    color: #fff;
+    font-weight: 300;
+    text-align: start;
+    position: absolute;
+    left: 30px;
+}
+.left_margin_title__block_two {
+    margin-left: 130px;
+}
+.icon_smile {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+}
+.title_block__two p div {
+    white-space: normal!important;
 }

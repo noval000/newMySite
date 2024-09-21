@@ -1,4 +1,14 @@
 .title_three_section {
     font-size: 36px;
     color: #fff;
+    font-weight: 200;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 15px;
+}
+.title_three_section div {
+    position: absolute;
+}
+.block_three_section {
+    position: relative;
 }

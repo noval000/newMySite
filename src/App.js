@@ -1,21 +1,21 @@
 import './App.css';
-import {Route, Routes} from "react-router-dom";
 import Home from "./components/home/home";
-import About from "./components/about/about";
 import Uslugi from "./components/uslugi/uslugi";
 import Portfolio from "./components/portfolio/portfolio";
-import Price from "./components/price/price";
 import Header from "./components/header/header";
-import Contacts from "./components/contacts/contacts";
 import {ParallaxProvider} from "react-scroll-parallax";
-import React from "react";
+import React, {useState} from "react";
 import {Cursor} from "react-creative-cursor";
+import Footer from "./components/Footer/Footer";
 
 function App() {
+
+
+
   return (
 <ParallaxProvider>
   <div className="App">
-    <Header/>
+
 
     {/*<Routes>*/}
     {/*  <Route*/}
@@ -40,16 +40,11 @@ function App() {
     {/*  />*/}
     {/*    */}
     {/*</Routes>*/}
-
-      <Home />
+      <Header/>
+      <Home/>
       <Uslugi />
       <Portfolio />
-    <Cursor
-        cursorSize={20}
-        animationDuration={0.5}
-        cursorBackgrounColor={"#fff"}
-        isGelly={true}
-    />
+      <Footer />
   </div>
 </ParallaxProvider>
 

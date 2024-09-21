@@ -1,55 +1,64 @@
 import React from 'react';
 import './section2.css';
-import {Fade} from "react-awesome-reveal";
-import web_design from '../../../images/about/web_design2.svg';
-import web_dev from '../../../images/about/web_dev.svg';
-import WebDesignCard from "./block_uslugi/web_design_card";
-import DevelopmentCard from "./block_uslugi/development_card";
-import Tilt from "react-parallax-tilt";
+import {Bounce, Fade, Reveal} from "react-awesome-reveal";
+import smile from '../../../images/icon/smile.svg'
+import smile2 from '../../../images/icon/smile2.svg'
+import smile3 from '../../../images/icon/smile3.svg'
+import {keyframes} from "@emotion/css";
 const Section2 = () => {
 
 
-    const backround_web_design = {
-        backgroundImage: `url(${web_dev})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-    }
-    const backround_web_dev = {
-        backgroundImage: `url(${web_dev})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-    }
 
 
+    const customAnimation = keyframes`
+      0% {
+        opacity: 0;
+        background-image: url("${smile}");
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 40px;
+        bottom: 0;
+        background-size: contain;
+        animation-duration: 700ms!important;
+      }
+    
+      100% {
+        opacity: 1;
+        background-image: url("${smile2}");
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        right: 40px;
+        bottom: 0;
+        background-size: contain;
+        animation-duration: 700ms!important;
+      }
+    `;
 
 
     return (
-            <div id="services" className="block_two_main pt100" data-cursor-exclusion>
-                <div className="title_two_section mb100">
-                    <Fade delay={0} cascade damping={0.05}>
-                        Мы оказываем такие услуги, как:
-                    </Fade>
+            <div id="services" className="block_two_main" data-cursor-exclusion>
+                <div className="title_block__two" >
+                    <p className='left_margin_title__block_two'>
+                        <Fade cascade damping={0.02}>
+                            Web development studio!
+                        </Fade>
+                    </p>
+                    <p>
+                        <Fade
+                            cascade damping={0.02} delay={600}>
+                            Наша команда профессионалов готова воплотить в жизнь любые проекты.
+                        </Fade>
+                    </p>
                 </div>
-                <div className="twelth_block_uslugs">
-                    <Tilt style={{backgroundColor:'#060A30', borderRadius:'10px', border:'1px solid #D2D2D2'}}
-                        glareEnable={true} tiltMaxAngleX={10}
-                          tiltMaxAngleY={10} perspective={1000}
-                          glareColor={"#D2D2D2"}>
-                        <WebDesignCard backround_web_design={backround_web_design}/>
-                    </Tilt>
-                    <Tilt style={{backgroundColor:'#060A30', borderRadius:'10px', border:'1px solid #D2D2D2'}}
-                          glareEnable={true} tiltMaxAngleX={10}
-                          tiltMaxAngleY={10} perspective={1000}
-                          glareColor={"#D2D2D2"}>
-                        <DevelopmentCard backround_web_dev={backround_web_dev}/>
-                    </Tilt>
-                    <Tilt style={{backgroundColor:'#060A30', borderRadius:'10px', border:'1px solid #D2D2D2'}}
-                          glareEnable={true} tiltMaxAngleX={10}
-                          tiltMaxAngleY={10} perspective={1000}
-                          glareColor={"#D2D2D2"}>
-                        <DevelopmentCard backround_web_dev={backround_web_dev}/>
-                    </Tilt>
-                </div>
+                <Reveal keyframes={customAnimation}>
+                    <div className="icon_smile">
+
+                    </div>
+                </Reveal>
             </div>
     );
 };
