@@ -1,0 +1,21 @@
+.block_one_list__technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+}
+.block_one_list__technology img {
+    padding-bottom: 20px;
+}
+.list_web {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid #E1E1ED;
+    padding: 50px 0 22px;
+    color: #fff;
+}
+.desc_image {
+    color: #E1E1ED;
+}

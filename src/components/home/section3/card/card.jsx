@@ -18,11 +18,11 @@ const Card = (props) => {
 
 
             {props.cards.map(el => (
-                <div className='one_usluga_section__three'>
+                <div key={el.id} className='one_usluga_section__three'>
                                 <HoverVideoPlayer
                                     onMouseEnter={changeHoverLink}
                                     onMouseLeave={changeHoverLinkOut}
-                                    videoSrc={video}
+                                    videoSrc={el.video}
                                     pausedOverlay={
 
                                     <div className="border_for_usligi" style={{height:'500px',padding:'20px',backgroundColor:'#292929'}}>

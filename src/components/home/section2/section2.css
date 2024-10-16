@@ -5,7 +5,7 @@
 
 .block_two_main {
     height: max-content;
-    padding: 40px 0 216px 0;
+    padding-top: 110px;
 }
 
 .twelth_block_uslugs {
@@ -70,7 +70,6 @@
     color: #fff;
     font-weight: 300;
     text-align: start;
-    position: absolute;
     left: 30px;
 }
 .left_margin_title__block_two {

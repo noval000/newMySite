@@ -4,9 +4,10 @@ import Uslugi from "./components/uslugi/uslugi";
 import Portfolio from "./components/portfolio/portfolio";
 import Header from "./components/header/header";
 import {ParallaxProvider} from "react-scroll-parallax";
-import React, {useState} from "react";
-import {Cursor} from "react-creative-cursor";
+import React from "react";
 import Footer from "./components/Footer/Footer";
+import {Route, Router, Routes} from "react-router-dom";
+import AdminAddWorks from "./components/adminAddWorks/adminAddWorks";
 
 function App() {
 
@@ -42,8 +43,8 @@ function App() {
     {/*</Routes>*/}
       <Header/>
       <Home/>
-      <Uslugi />
-      <Portfolio />
+      {/*<Uslugi />*/}
+      {/*<Portfolio />*/}
       <Footer />
   </div>
 </ParallaxProvider>

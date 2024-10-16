@@ -17,35 +17,43 @@
     background:#292929;
     height: 540px;
 }
-.border_for_usligi_bottom {
-    border-top: 1px solid #fff;
+
+.one_usluga_section__three {
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.one_usluga_section__three:first-child {
+    border-left: none;
+}
+.one_usluga_section__three:last-child {
+    border-right: none;
+}
+.border_for_usligi_bottom {
+    border-top: 1px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .border_for_usligi {
     border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .border_for_usligi:last-child {
     border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+
 }
 .border_for_usligi_bottom:last-child {
-    border-right: 1px solid #ccc;
+
 }
 .border_for_usligi:first-child {
     border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
 }
 .border_for_usligi_bottom:first-child {
-    border-left: 1px solid #ccc;
+
 }
 .name_card_uslugi_section_three {
     text-align: start;
