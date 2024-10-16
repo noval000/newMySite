@@ -41,24 +41,24 @@ const Section2 = () => {
 
     return (
             <div id="services" className="block_two_main" data-cursor-exclusion>
-                <div className="title_block__two" >
-                    <p className='left_margin_title__block_two'>
-                        <Fade cascade damping={0.02}>
-                            Web development studio!
-                        </Fade>
-                    </p>
-                    <p>
-                        <Fade
-                            cascade damping={0.02} delay={600}>
-                            Наша команда профессионалов готова воплотить в жизнь любые проекты.
-                        </Fade>
-                    </p>
-                </div>
-                <Reveal keyframes={customAnimation}>
-                    <div className="icon_smile">
+                {/*<div className="title_block__two" >*/}
+                {/*    <p className='left_margin_title__block_two'>*/}
+                {/*        <Fade cascade damping={0.02}>*/}
+                {/*            Web development studio!*/}
+                {/*        </Fade>*/}
+                {/*    </p>*/}
+                {/*    <p>*/}
+                {/*        <Fade*/}
+                {/*            cascade damping={0.02} delay={600}>*/}
+                {/*            Наша команда профессионалов готова воплотить в жизнь любые проекты.*/}
+                {/*        </Fade>*/}
+                {/*    </p>*/}
+                {/*</div>*/}
+                {/*<Reveal keyframes={customAnimation}>*/}
+                {/*    <div className="icon_smile">*/}
 
-                    </div>
-                </Reveal>
+                {/*    </div>*/}
+                {/*</Reveal>*/}
             </div>
     );
 };

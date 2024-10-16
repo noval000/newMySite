@@ -1,0 +1,22 @@
+.title_thour_section {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 200;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 15px;
+}
+.title_thour_section div {
+    border-bottom: 2px solid #fff;
+}
+.title_thour_section div {
+    position: absolute;
+}
+.block_thour_section {
+    position: relative;
+    padding-top: 200px;
+}
+.block_web_technology {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

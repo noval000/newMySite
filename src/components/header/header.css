@@ -1,5 +1,5 @@
 header {
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     background: #292929;
 }
 
@@ -45,15 +45,15 @@ header {
 }
 
 .active_link {
-    border-bottom: 1px solid #FF4C2B;
+    border-bottom: 1px solid #010716;
 }
 
 .active_link a {
-    color: #FF4C2B;
+    color: #010716;
 }
 
 .active_link::before {
-    background-color: #FF4C2B!important;
+    background-color: #010716!important;
 }
 
 .item_menu::before {

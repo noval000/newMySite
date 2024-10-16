@@ -16,11 +16,11 @@ const CardBottom = (props) => {
 
 
             {props.cardsBottom.map(el => (
-                <div className='one_usluga_section__three'>
+                <div key={el.id} className='one_usluga_section__three'>
                     <HoverVideoPlayer
                         onMouseEnter={changeHoverLink}
                         onMouseLeave={changeHoverLinkOut}
-                        videoSrc={video}
+                        videoSrc={el.video}
                         pausedOverlay={
 
                             <div

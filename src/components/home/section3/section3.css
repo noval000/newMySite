@@ -7,6 +7,9 @@
     left: 15px;
 }
 .title_three_section div {
+    border-bottom: 2px solid #fff;
+}
+.title_three_section div {
     position: absolute;
 }
 .block_three_section {

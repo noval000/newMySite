@@ -1,0 +1,36 @@
+.ant-steps-item-active .ant-steps-item-title {
+    color: #fff!important;
+    opacity: 1;
+}
+
+.ant-steps-item-title {
+    opacity: .7;
+    color: #fff!important;
+}
+
+.ant-steps-item-active .ant-steps-item-icon {
+    background-color: #010716!important;
+    border: #010716!important;
+}
+
+.ant-steps-item-finish .ant-steps-icon {
+    color: #010716!important;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+    background-color: #fff!important;
+    border: #fff!important;
+}
+
+.ant-steps-item-wait .ant-steps-item-icon {
+    background-color: #fff!important;
+    border: #fff!important;
+}
+
+.ant-steps-item-wait .ant-steps-icon {
+    color: #010716!important;
+}
+
+.ant-steps-item-finish .ant-steps-item-title::after {
+    background-color: #fff!important;
+}
